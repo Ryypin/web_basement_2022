@@ -1,0 +1,14 @@
+.background{
+    z-index: -1;
+    position: absolute;
+    height: 360px;
+    width: 360px;
+    &._left{
+        bottom: 0;
+        left: 0;
+    }
+    &._right{
+        right: 0;
+        top: 120px;
+    }
+}

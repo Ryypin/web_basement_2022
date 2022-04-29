@@ -1,0 +1,40 @@
+.container{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    color: red;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+.alberthum{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(228,31,19,1) 100%); 
+    border: 5px solid transparent;
+    animation: rotation 3s infinite linear;
+    &__img{
+        position: absolute;
+        height: 50px;
+        width: auto;
+    }
+    &__title{
+        font-family: 'Centurion';
+    }
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg) ;
+    }
+  }

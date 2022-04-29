@@ -1,0 +1,27 @@
+.content{
+    display: flex;
+    align-items: center;
+    &__block{
+        margin-bottom: 48px;
+        border-radius: 25px;
+        width: 100%;
+        background-color: #FFFFFF;
+        height: 160px;
+    }
+    &__big{
+        border-radius: 25px;
+        width: 100%;
+        background-color: #FFFFFF;
+        height: 420px;
+    }
+    &__block:first-child{
+        max-width: 528px;
+        margin-right: 48px;
+    }
+    &__big:first-child{
+        margin-right: 48px;
+    }
+    &__big:last-child{
+        max-width: 528px;
+    }
+}

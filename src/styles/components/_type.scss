@@ -1,5 +1,4 @@
 body {
-  font-family: sans-serif;
   font-size: $size-text;
   line-height: 1.5;
   color: $c-text;
@@ -7,4 +6,28 @@ body {
 
 .title {
   color: $c-alt;
+  &._medium{
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  &._upper{
+    text-transform: uppercase;
+  }
+  &._marg-left{
+    margin: 0;
+    margin-left: 96px;
+    margin-top: -15px;
+  }
+}
+
+.text{
+  font-size: 18px;
+  color: black;
+  &._small{
+    font-size: 16px;
+  }
+  &._color-grey{
+    color: #898989;
+  }
 }

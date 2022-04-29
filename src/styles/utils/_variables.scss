@@ -1,5 +1,48 @@
 $c-bg: #efefef;
-$c-alt: #e41612;
+$c-alt: #000000;
 $c-text: #444;
 
 $size-text: 18px;
+
+html{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F8F8F8;
+    height: 100%;
+    width: 100%;
+    font-family: 'BeVietnamPro-Regular';
+}
+
+body{
+    font-family: 'BeVietnamPro-Regular';
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: black;
+    font-family: 'BeVietnamPro-Bold';
+}
+
+@font-face {
+    font-family: 'Inertia';
+    src: url(../../assets/fonts/Inertia.ttf);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Centurion';
+    src: url(../../assets/fonts/CENTURION.ttf);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BeVietnamPro-Regular';
+    src: url(../../assets/fonts/BeVietnamPro-Regular.ttf);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BeVietnamPro-Bold';
+    src: url(../../assets/fonts/BeVietnamPro-Bold.ttf);
+    font-style: normal;
+}
