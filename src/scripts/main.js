@@ -21,24 +21,37 @@ if(buyButton){
 
 
 let alberthum = document.querySelector("[data-alberthum]");
-let alberthumValue = 0;
-if(alberthum){
-    alberthumValue = Number(alberthum.getAttribute("data-alberthum") );
-    console.log(alberthumValue);
+let alberthumValue = sessionStorage.getItem("credit");
 
+let alberthumToEuro = document.querySelector("[data-euro]");
 
-    let Products = document.querySelectorAll("[data-price]");
-    Products.forEach(event => { event.addEventListener("click", e => {
-          let getvalue = event.target.getAttribute(data-price);
-          console.log(getvalue);
-        })});
-
-
+if(alberthum && alberthumValue){
+        alberthum.innerHTML = alberthumValue;
+        alberthum.setAttribute("data-alberthum",alberthumValue );
+        alberthumToEuro.innerHTML =  (alberthumValue *1.52).toFixed(5);
+//    console.log(alberthumValue);
 }
 
+if(alberthum){
+    alberthumValue = Number(alberthum.getAttribute("data-alberthum") );
 
+    let Products = document.querySelectorAll("[data-price]");
 
-Products = (multicheckboxes.forEach(t => {
-        t.addEventListener("click", e => {
-            "true" == e.target.getAttribute("data-button") && t.classList.toggle("toolContainer__checkboxes--open")
-        })
+        Products.forEach(item => {
+            item.addEventListener('click', event => {
+                console.log(event.target);
+                let dataSale = event.target.getAttribute("data-price");
+
+                console.log(alberthumValue +" "+ dataSale);
+                if(alberthumValue >= dataSale){
+                alberthumValue =   alberthumValue - dataSale;
+                alberthum.innerHTML = alberthumValue;
+                sessionStorage.setItem("credit", alberthumValue);
+                alberthumToEuro.innerHTML =  (alberthumValue *1.52).toFixed(2);
+            }else{
+                alert("crédit insuffisant");
+            }
+            });
+        });
+
+}
