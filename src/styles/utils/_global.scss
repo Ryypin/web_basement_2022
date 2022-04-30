@@ -43,6 +43,8 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .button{
+    display: block;
+    text-decoration: none;
     cursor: pointer;
     position: relative;
     background: none;
@@ -50,6 +52,7 @@ h1, h2, h3, h4, h5, h6{
     padding: 0;
     margin: 0;
     font-family: 'BeVietnamPro-Regular';
+    font-size: 14px;
     text-transform: uppercase;
     color: #fff;
     cursor: pointer;
@@ -64,6 +67,26 @@ h1, h2, h3, h4, h5, h6{
         margin: auto;
     }
 }
+
+// div{
+//     display: flex;
+//     align-items: center;
+//     width: 100%;
+//     height: 10px;
+
+//     background: red;
+//     outline: .1rem dashed dodgerblue;
+
+//     font-size: 10px;
+//     line-height: 10px;
+//     color: red;
+
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     transform: translate(-50%,0);
+
+// }
 .button::after{
     content: '';
     position: absolute;
@@ -74,11 +97,12 @@ h1, h2, h3, h4, h5, h6{
     filter: blur(1px);
     opacity: 0.9;
     top: -30px;
+    left: 0;
     transition: 0.7s;
     transform: translateX(-200px) rotate(-20deg);
 }
 .button:hover::after{
-    transform: translate(140px, 10px) rotate(-20deg);
+    transform: translate(270px, 10px) rotate(-20deg);
 }
 .button:hover{
     transition: 0.4s;

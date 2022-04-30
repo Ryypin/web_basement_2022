@@ -1,0 +1,55 @@
+.cours{
+    &__buy{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 300px;
+        height: 78px;
+        background-color: white;
+        border-radius: 25px;
+        padding-left: 48px;
+        padding-right: 48px;
+        transition: 0.4s;
+        cursor: pointer;
+        span:first-child{
+            font-family: 'BeVietnamPro-Bold';
+            font-weight: 500;
+        }
+    }
+    &__buy:hover{
+        background-color: $c-accent;
+        transition: 0.4s;
+        span:first-child{
+            color: white;
+        }
+    }
+    &__infos{
+        position: relative;
+        margin-left: 24px;
+        margin-right: 24px;
+        p{
+            font-size: 16px;
+            margin: 0;
+        }
+        p:first-child{
+            margin-top: 12px;
+            margin-bottom: 12px;
+        }
+    }
+}
+.container__cours{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 48px;
+}
+.infos{
+    position: relative;
+    margin-left: 96px;
+    &__svg{
+        width: 48px;
+        position: absolute;
+        left: -70px;
+        top: 70px;
+    }
+}

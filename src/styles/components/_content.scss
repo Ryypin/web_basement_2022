@@ -72,7 +72,12 @@
         align-items: center;
         justify-content: space-between;
         border-bottom: solid 2px $c-grey;
-        padding: 24px 0;
+        padding: 24px 12px;
+        cursor: pointer;
+    }
+    &__el:hover{
+        background-color: $c-accent;
+        color: white;
     }
     &__al{
         display: inline-block;

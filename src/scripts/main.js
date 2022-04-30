@@ -17,3 +17,9 @@ if(buyButton){
     });
 
 }
+
+const buttonHref = document.querySelector('.button-href');
+
+buttonHref.addEventListener('click', event => {
+    window.href = 'http://localhost:3000/cours.html';
+})
