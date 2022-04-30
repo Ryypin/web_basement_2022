@@ -63,3 +63,25 @@
         align-items: center;
     }
 }
+.cours{
+    &__list{
+        margin: 0 48px 0 48px;
+    }
+    &__el{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: solid 2px $c-grey;
+        padding: 24px 0;
+    }
+    &__al{
+        display: inline-block;
+        padding: 2px 12px;
+        @include degrad;
+        font-size: 14px;
+        font-family: 'BeVietnamPro-Regular';
+        color: white;
+        border-radius: 20px;
+        font-weight: 600;
+    }
+}

@@ -17,6 +17,9 @@ html{
     background: linear-gradient(135deg, rgba(0,0,0,0) 0%, rgba(112,15,9,0) 0%, rgba(0,0,0,0) 75%, rgba(228,31,19,0.25) 100%);
     background-color: #F8F8F8;
     background-repeat: no-repeat;
+    background-image: url(../../assets/images/circle.svg);
+    background-position-x: -25%;
+    background-position-y: -85%;
 }
 
 body{
@@ -40,6 +43,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .button{
+    position: relative;
     background: none;
     border: none;
     padding: 0;
@@ -52,6 +56,28 @@ h1, h2, h3, h4, h5, h6{
     border-radius: 25px;
     font-weight: 600;
     letter-spacing: 1px;
+    overflow: hidden;
+    transition: 0.4s;
+}
+.button::after{
+    content: '';
+    position: absolute;
+    height: 100px;
+    width: 20px;
+    background-color: #f3f3f3;
+    box-shadow: 0 0 40px rgba(255,255,255,0.9);
+    filter: blur(1px);
+    opacity: 0.9;
+    top: -30px;
+    transition: 0.7s;
+    transform: translateX(-200px) rotate(-20deg);
+}
+.button:hover::after{
+    transform: translate(140px, 10px) rotate(-20deg);
+}
+.button:hover{
+    transition: 0.4s;
+    scale: 1.1;
 }
 
 @font-face {
