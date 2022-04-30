@@ -1,26 +1,57 @@
 $c-bg: #efefef;
 $c-alt: #000000;
+$c-accent: #E41F13;
+$c-grey: #909090;
 $c-text: #444;
-
+$c-green: #26AB58;
+/* Degradé bouton : #D11C1A #B51725 */
 $size-text: 18px;
 
 html{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #F8F8F8;
     height: 100%;
     width: 100%;
     font-family: 'BeVietnamPro-Regular';
+    background: linear-gradient(135deg, rgba(0,0,0,0) 0%, rgba(112,15,9,0) 0%, rgba(0,0,0,0) 75%, rgba(228,31,19,0.25) 100%);
+    background-color: #F8F8F8;
+    background-repeat: no-repeat;
 }
 
 body{
     font-family: 'BeVietnamPro-Regular';
 }
 
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
 h1, h2, h3, h4, h5, h6{
     color: black;
     font-family: 'BeVietnamPro-Bold';
+}
+
+@mixin degrad {
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(209,28,26,1) 0%, rgba(181,23,37,1) 100%); 
+}
+
+.button{
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-family: 'BeVietnamPro-Regular';
+    text-transform: uppercase;
+    color: #fff;
+    @include degrad;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
 @font-face {

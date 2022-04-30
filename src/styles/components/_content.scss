@@ -25,3 +25,41 @@
         max-width: 528px;
     }
 }
+.thug{
+    &__list{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 6px;
+        margin: 6px 36px 0 36px;
+    }
+    &__name{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px;
+        margin: 0;
+    }
+    &__img{
+        display: flex;
+        align-items: center;
+        height: fit-content;
+        width: fit-content;
+        padding: 5px;
+        border: solid 3px black;
+        border-radius: 40px;
+        margin-bottom: 6px;
+    }
+    &__face{
+        height: 60px;
+        width: 60px;
+        border-radius: 30px;
+    }
+    &__el{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

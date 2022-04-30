@@ -11,13 +11,17 @@ body {
     font-weight: 700;
     letter-spacing: 1px;
   }
+  &._small{
+    font-size: 16px;
+    font-weight: 600;
+  }
   &._upper{
     text-transform: uppercase;
   }
   &._marg-left{
     margin: 0;
     margin-left: 96px;
-    margin-top: -15px;
+    margin-top: -18px;
   }
 }
 

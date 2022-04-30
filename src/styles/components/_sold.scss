@@ -1,0 +1,46 @@
+.sold{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 48px;
+    &__list{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    &__albert{
+        font-size: 36px;
+        font-family: 'BeVietnamPro-Bold';
+        color: $c-accent;
+    }
+    &__thum{
+        font-size: 16px;
+        font-family: 'BeVietnamPro-Bold';
+        color: black;
+    }
+    &__el--total{
+        color: $c-grey;
+        font-family: 'BeVietnamPro-Bold';
+        font-size: 16px;
+        margin-bottom: 24px;
+    }
+    &__al{
+        display: inline-block;
+        padding: 2px 12px;
+        @include degrad;
+        font-size: 14px;
+        font-family: 'BeVietnamPro-Bold';
+        color: white;
+        border-radius: 20px;
+    }
+    &__price{
+        font-family: 'BeVietnamPro-Bold';
+        font-size: 16px;
+        color: $c-grey;
+    }
+}
+.buy{
+    display: flex;
+    flex-direction: column;
+    margin-right: 48px;
+}

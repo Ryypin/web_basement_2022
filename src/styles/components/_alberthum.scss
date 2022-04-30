@@ -1,11 +1,11 @@
 .container{
-    position: absolute;
     display: flex;
     align-items: center;
     color: red;
-    opacity: 0;
+    margin-bottom: 12px;
+    /* opacity: 0;
     visibility: hidden;
-    pointer-events: none;
+    pointer-events: none; */
 }
 .alberthum{
     position: relative;
@@ -20,6 +20,7 @@
     background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(228,31,19,1) 100%); 
     border: 5px solid transparent;
     animation: rotation 3s infinite linear;
+    margin-right: 18px;
     &__img{
         position: absolute;
         height: 50px;
@@ -27,6 +28,7 @@
     }
     &__title{
         font-family: 'Centurion';
+        font-size: 24px;
     }
 }
 
