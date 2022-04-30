@@ -39,7 +39,7 @@ h1, h2, h3, h4, h5, h6{
 
 @mixin degrad {
     background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(209,28,26,1) 0%, rgba(181,23,37,1) 100%); 
+    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(209,28,26,1) 0%, rgba(181,23,37,1) 100%);
 }
 
 .button{
@@ -52,6 +52,7 @@ h1, h2, h3, h4, h5, h6{
     font-family: 'BeVietnamPro-Regular';
     text-transform: uppercase;
     color: #fff;
+    cursor: pointer;
     @include degrad;
     padding: 12px 24px;
     border-radius: 25px;
