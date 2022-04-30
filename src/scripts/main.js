@@ -47,9 +47,9 @@ if(alberthum){
                 alberthumValue =   alberthumValue - dataSale;
                 alberthum.innerHTML = alberthumValue;
                 sessionStorage.setItem("credit", alberthumValue);
-                alberthumToEuro.innerHTML =  (alberthumValue *1.52).toFixed(2);
+                alberthumToEuro.innerHTML =  (alberthumValue *1.52).toFixed(2) + '€';
             }else{
-                alert("crédit insuffisant");
+                alert("Crédit insuffisant, vous êtes viré.");
             }
             });
         });
