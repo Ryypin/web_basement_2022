@@ -15,6 +15,9 @@
             font-family: 'BeVietnamPro-Bold';
             font-weight: 500;
         }
+        * {
+            pointer-events: none;
+        }
     }
     &__buy:hover{
         background-color: $c-accent;
