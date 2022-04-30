@@ -49,7 +49,7 @@ if(alberthum){
                 sessionStorage.setItem("credit", alberthumValue);
                 alberthumToEuro.innerHTML =  (alberthumValue *1.52).toFixed(2) + '€';
             }else{
-                alert("Crédit insuffisant, vous êtes viré.");
+                alert("Crédit insuffisant.");
             }
             });
         });
