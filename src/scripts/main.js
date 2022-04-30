@@ -18,8 +18,27 @@ if(buyButton){
 
 }
 
-const buttonHref = document.querySelector('.button-href');
 
-buttonHref.addEventListener('click', event => {
-    window.href = 'http://localhost:3000/cours.html';
-})
+
+let alberthum = document.querySelector("[data-alberthum]");
+let alberthumValue = 0;
+if(alberthum){
+    alberthumValue = Number(alberthum.getAttribute("data-alberthum") );
+    console.log(alberthumValue);
+
+
+    let Products = document.querySelectorAll("[data-price]");
+    Products.forEach(event => { event.addEventListener("click", e => {
+          let getvalue = event.target.getAttribute(data-price);
+          console.log(getvalue);
+        })});
+
+
+}
+
+
+
+Products = (multicheckboxes.forEach(t => {
+        t.addEventListener("click", e => {
+            "true" == e.target.getAttribute("data-button") && t.classList.toggle("toolContainer__checkboxes--open")
+        })
