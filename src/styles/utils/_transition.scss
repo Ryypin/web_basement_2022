@@ -1,0 +1,42 @@
+@keyframes translateLeft {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes translateRight {
+    from {
+        transform: translateX(50px);
+        opacity: 0;
+    }to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.content__block{
+    animation: translateRight 0.6s 1 ease-in;
+    h2{
+        animation: translateLeft 0.6s 1 ease-in;
+    }
+}
+.thug{
+    animation: translateLeft 0.6s 1 ease-in;
+    h2{
+        animation: translateRight 0.6s 1 ease-in;
+    }
+}
+.content__big{
+    animation: translateLeft 0.6s 1 ease-in;
+    h2{
+        animation: translateRight 0.6s 1 ease-in;
+    }
+}
+.cours{
+    animation: translateRight 0.6s 1 ease-in;
+    h2{
+        animation: translateLeft 0.6s 1 ease-in;
+    }
+}
