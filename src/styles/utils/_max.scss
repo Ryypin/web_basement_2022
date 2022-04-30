@@ -72,7 +72,7 @@ padding-left: 0px;
 .payPopUp{
     display: none;
     &.open{
-        display: block;
+    display: flex;
     }
     position: fixed;
     top: 0;
@@ -82,13 +82,17 @@ padding-left: 0px;
     width: 100vw;
     background-color:  rgba(20,20,20,0.8);
 
-    display: flex;
+
+
     flex-direction: row;
     align-items: center;
     justify-content: center;
+
+//    position: relative;
 }
 
 .popUpContainer{
+
     width: 50%;
     max-width: 700px;
 
@@ -123,6 +127,8 @@ padding-left: 0px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    margin-top: 24px;
 }
 
 .popUp__para{
@@ -138,4 +144,26 @@ padding-left: 0px;
     border-radius: 50%;
     background: none;
     cursor: pointer;
+}
+
+.inputPopup{
+    height: 32px;
+    border:  none;
+    border-radius: 9px;
+     box-shadow: 0px 0px 9px 0px rgba(85,85,85,0.2);
+     &::placeholder{
+         padding-left: 9px;
+     }
+     &__long{
+     }
+     width: 100%;
+
+     &--maringRIght{
+         margin-right: 9px;
+     };
+     &--marginLeft{
+         margin-left: 9px;
+     }
+
+
 }
